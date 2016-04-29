@@ -1,0 +1,20 @@
+<div ng-include src="headerUrl"></div>
+<div class="content" >
+    <div *ngFor="#element of elements">
+        <div class="heading-wrapper">
+            <h2 class="heading">Top {{element.category.name}}</h2>
+        </div>
+        <ul class="grid-3col">
+            <li class="card" *ngFor="#elementK of element?.topDownload">
+                <img src="{{ elementK.preview.contentUrl }}">
+                <h4>{{ elementK.name }}</h4>
+                <p>{{ element.caption }}</p>
+                <a  (click)="gotoDownload(element)"class="btn btn-rounded">
+                    <div  *ngIf="element.dle_type!='video'" >Descargar</div>
+                    <div  *ngIf="element.dle_type=='video'" >Ver</div>
+                </a>    
+            </li>
+        </ul>
+    </div>
+    <a href="#" (click)="goBack()" class="btn-back btn-rounded">Regresar</a>
+</div>

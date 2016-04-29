@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "compilerOptions": {
+				 "outDir": "app",
+                                 "out": "gamehaven.js",
+                                 "target": "es5",
+                                 "module": "system",
+                                 "sourceMap": true,
+                                 "emitError": false,
+                                 "emitDecoratorMetadata": true,
+                                 "experimentalDecorators": true,
+                                 "moduleResolution": "node",
+                                 "removeComments": true,
+                                 "noImplicitAny": true,
+                                 "noLib": "true",
+                                 "allowUnreachableCode": "true",
+                                 "suppressImplicitAnyIndexErrors": true,
+                                 "globalEvaluationScope": "true"
+  },
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ]
+}
